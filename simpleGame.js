@@ -326,6 +326,7 @@ function Sprite(scene, imageFile, width, height){
 
   this.addForce = function(degrees, thrust){
     //alias for addVector
+    // doesn't really do anything new
     this.addVector(degrees, thrust);
   } // end addForce
 
