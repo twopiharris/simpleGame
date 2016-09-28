@@ -322,7 +322,14 @@ function Sprite(scene, imageFile, width, height){
     //same as changeAngleBy
     this.changeAngleBy(degrees);
   }
-  
+ 
+
+  this.addForce = function(degrees, thrust){
+    //alias for addVector
+    this.addVector(degrees, thrust);
+  } // end addForce
+
+ 
   this.addVector = function(degrees, thrust){
     //Modify the current motion vector by adding a new vector to it.
 
